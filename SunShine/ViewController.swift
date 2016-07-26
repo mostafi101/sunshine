@@ -9,6 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var backGround: UIImageView!
+    @IBOutlet weak var cityName: UILabel!
+    @IBOutlet weak var currentTime: UILabel!
+    @IBOutlet weak var currentWeatherImg: UIImageView!
+    @IBOutlet weak var currentWeatherLbl: UILabel!
+    @IBOutlet weak var highestTempOfTheDay: UILabel!
+    @IBOutlet weak var lowestTempOfTheDay: UILabel!
+    @IBOutlet weak var currentTemp: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

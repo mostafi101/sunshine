@@ -12,9 +12,13 @@
 		4048EFFB1D469C52003632CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4048EFF91D469C52003632CB /* Main.storyboard */; };
 		4048EFFD1D469C52003632CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4048EFFC1D469C52003632CB /* Assets.xcassets */; };
 		4048F0001D469C52003632CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4048EFFE1D469C52003632CB /* LaunchScreen.storyboard */; };
+		40838E7C1D4712A300B63D3F /* DailyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40838E7B1D4712A300B63D3F /* DailyCell.swift */; };
+		40838E7E1D4712C100B63D3F /* HourlyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40838E7D1D4712C000B63D3F /* HourlyCell.swift */; };
+		C2D304D71C0637C20D22853D /* Pods_SunShine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11F82BF39BEC62CE5C090BA /* Pods_SunShine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		008FFC4F22113F63B8621456 /* Pods-SunShine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunShine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunShine/Pods-SunShine.debug.xcconfig"; sourceTree = "<group>"; };
 		4048EFF21D469C52003632CB /* SunShine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunShine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4048EFF51D469C52003632CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4048EFF71D469C52003632CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		4048EFFC1D469C52003632CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4048EFFF1D469C52003632CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4048F0011D469C52003632CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40838E7B1D4712A300B63D3F /* DailyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyCell.swift; sourceTree = "<group>"; };
+		40838E7D1D4712C000B63D3F /* HourlyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyCell.swift; sourceTree = "<group>"; };
+		C11F82BF39BEC62CE5C090BA /* Pods_SunShine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunShine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8322759BA6F5BF3980CDFB7 /* Pods-SunShine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunShine.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunShine/Pods-SunShine.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D304D71C0637C20D22853D /* Pods_SunShine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				4048EFF41D469C52003632CB /* SunShine */,
 				4048EFF31D469C52003632CB /* Products */,
+				F018F21BFBD39003461D1FC4 /* Pods */,
+				8988D3776B4BF78B57AE23A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +65,57 @@
 		4048EFF41D469C52003632CB /* SunShine */ = {
 			isa = PBXGroup;
 			children = (
+				40BDF2701D470CCB00D9B00B /* Model */,
+				40BDF2711D470CD300D9B00B /* View */,
+				40BDF2721D470CE800D9B00B /* Controller */,
 				4048EFF51D469C52003632CB /* AppDelegate.swift */,
-				4048EFF71D469C52003632CB /* ViewController.swift */,
-				4048EFF91D469C52003632CB /* Main.storyboard */,
 				4048EFFC1D469C52003632CB /* Assets.xcassets */,
-				4048EFFE1D469C52003632CB /* LaunchScreen.storyboard */,
 				4048F0011D469C52003632CB /* Info.plist */,
 			);
 			path = SunShine;
+			sourceTree = "<group>";
+		};
+		40BDF2701D470CCB00D9B00B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		40BDF2711D470CD300D9B00B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4048EFF91D469C52003632CB /* Main.storyboard */,
+				4048EFFE1D469C52003632CB /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		40BDF2721D470CE800D9B00B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4048EFF71D469C52003632CB /* ViewController.swift */,
+				40838E7B1D4712A300B63D3F /* DailyCell.swift */,
+				40838E7D1D4712C000B63D3F /* HourlyCell.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8988D3776B4BF78B57AE23A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C11F82BF39BEC62CE5C090BA /* Pods_SunShine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F018F21BFBD39003461D1FC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				008FFC4F22113F63B8621456 /* Pods-SunShine.debug.xcconfig */,
+				C8322759BA6F5BF3980CDFB7 /* Pods-SunShine.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4048F0041D469C52003632CB /* Build configuration list for PBXNativeTarget "SunShine" */;
 			buildPhases = (
+				4215D63E44032CCE6DA14CF5 /* [CP] Check Pods Manifest.lock */,
 				4048EFEE1D469C52003632CB /* Sources */,
 				4048EFEF1D469C52003632CB /* Frameworks */,
 				4048EFF01D469C52003632CB /* Resources */,
+				D28D9D52BFEBD3BF8CC6341B /* [CP] Embed Pods Frameworks */,
+				9BE3B4C144F00D47396F0368 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +187,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4215D63E44032CCE6DA14CF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9BE3B4C144F00D47396F0368 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunShine/Pods-SunShine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D28D9D52BFEBD3BF8CC6341B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunShine/Pods-SunShine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4048EFEE1D469C52003632CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4048EFF81D469C52003632CB /* ViewController.swift in Sources */,
+				40838E7C1D4712A300B63D3F /* DailyCell.swift in Sources */,
+				40838E7E1D4712C100B63D3F /* HourlyCell.swift in Sources */,
 				4048EFF61D469C52003632CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +356,7 @@
 		};
 		4048F0051D469C52003632CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 008FFC4F22113F63B8621456 /* Pods-SunShine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SunShine/Info.plist;
@@ -260,6 +368,7 @@
 		};
 		4048F0061D469C52003632CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8322759BA6F5BF3980CDFB7 /* Pods-SunShine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SunShine/Info.plist;
@@ -288,6 +397,7 @@
 				4048F0061D469C52003632CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
